@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+
+  /* We don’t want flex here to avoid unexpected shifts */
+  /* Instead, use a container to center content */
+}
+
+/* Fixed header */
+.owasp-header {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owasp-header__inner {
+  max-width: 1100px;
+  width: 100%;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.owasp-header__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.owasp-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.owasp-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.owasp-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.owasp-header__right {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.owasp-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+  background: transparent;
+}
+
+.owasp-link:hover,
+.owasp-link:focus {
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+  color: #fff;
+}
+
+/* Container for main content to center horizontally */
+.container {
+  max-width: 320px; /* same width as profile */
+  margin: 80px auto 40px; /* 80px top margin to clear fixed header */
+  padding: 0 16px; /* some padding on sides for small screens */
+  text-align: center; /* center text */
+}
+
+/* Profile styles */
+main.profile {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%; /* take full width of container */
+}
+
+main.profile h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+main.profile p {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Buttons */
+a.button {
+  display: inline-block;
+  margin: 10px 10px 0 10px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+a.button.logout {
+  background: #e74c3c;
+}
+
+a.button:hover {
+  background: #45a049;
+}
+
+a.button.logout:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 360px) {
+  .container {
+    max-width: 95%;
+  }
+}

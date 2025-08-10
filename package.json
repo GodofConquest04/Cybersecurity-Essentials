@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "path": "^0.12.7"
+  },
+  "name": "cybersecurity-essentials",
+  "description": "Hands-on lab repository for the Cybersecurity Essentials event, hosted under OWASP TCET on 12 August 2025 at Thakur College of Engineering and Technology.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodofConquest04/Cybersecurity-Essentials.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GodofConquest04/Cybersecurity-Essentials/issues"
+  },
+  "homepage": "https://github.com/GodofConquest04/Cybersecurity-Essentials#readme",
+  "devDependencies": {}
+}
