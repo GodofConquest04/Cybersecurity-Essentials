@@ -62,6 +62,7 @@ Each folder in this repository contains a lab for a specific attack.
    cd Cybersecurity-Essentials
    
 3. Install all necessary modules
+
    apt install apache2 npm nodejs -y
 
 3. Copy all files to your Apache web root (for example /var/www/html/):  
