@@ -61,13 +61,16 @@ Each folder in this repository contains a lab for a specific attack.
    
    cd Cybersecurity-Essentials
    
+   
 3. Install all necessary modules
 
    apt install apache2 npm nodejs -y
-
-3. Copy all files to your Apache web root (for example /var/www/html/):  
+   
+3. Copy all files to your Apache web root and change permissions(for Debian /var/www/html/):  
    cp -r * /var/www/html/
    cd /var/www/html/
+   chown -R www-data:www-data /var/www/html/
+   chmod 666 /var/www/html/chat/messages.json
 
 4. Install required Node.js packages:  
    npm install express path jsonwebtoken cookie-parser
