@@ -57,25 +57,25 @@ Each folder in this repository contains a lab for a specific attack.
 🚀 Getting Started
 
 1. Clone the repository:  
-   git clone https://github.com/GodofConquest04/Cybersecurity-Essentials.git
+   git clone https://github.com/GodofConquest04/Cybersecurity-Essentials.git;
    
-   cd Cybersecurity-Essentials
+   cd Cybersecurity-Essentials;
    
    
 3. Install all necessary modules
 
-   apt install apache2 npm nodejs -y
+   apt install apache2 npm nodejs -y;
    
 3. Copy all files to your Apache web root and change permissions(for Debian /var/www/html/):  
-   cp -r * /var/www/html/
-   cd /var/www/html/
-   chown -R www-data:www-data /var/www/html/
-   chmod 666 /var/www/html/chat/messages.json
+   cp -r * /var/www/html/;
+   cd /var/www/html/;
+   chown -R www-data:www-data /var/www/html/;
+   chmod 666 /var/www/html/chat/messages.json;
 
 4. Install required Node.js packages:  
-   npm install express path jsonwebtoken cookie-parser
-   npm init -y
+   npm install express path jsonwebtoken cookie-parser;
+   npm init -y;
 
 5. Start the Node.js server:
-   node ./param/server.js
+   node ./param/server.js;
 ---
